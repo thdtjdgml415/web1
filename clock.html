@@ -43,8 +43,7 @@
             
             var time = h + ":" + m + ":" + s + " " + session;
             
-            document.getElementById("MyClock").innerText = time;
-            document.getElementById("MyClock").textContent = time;
+            document.getElementById("MyClock").innerHTML = time;
 
             setTimeout(showTime, 1000);
         }
