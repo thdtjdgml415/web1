@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript</title>
+    <meta charset="utf-8">
+<style>
+
+  #active{
+      color: red;
+          }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    h1{
+      font-size: 60px;
+      text-align: center;
+ /*block level element */
+      border-bottom: 5px solid gray;
+      padding: 10px;
+      margin: 0px;
+    }
+    #grid ul{
+      font-size: 20px;
+      border-right: 5px solid gray;
+      width: 150px;
+      padding: 10px;
+      margin: 0px;
+      margin-left: 20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #article{
+      padding-left: 60px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display: block;
+      }
+      #grid ul{
+        border-right: none;
+      }
+    }
+</style>
+
+  </head>
+  <body>
+      <script>
+          
+          var id = prompt("아이디를 입력해주세요.")
+          var password = prompt("비밀번호를 입력해주세요.")
+          if(id == "song" && password == "111111"){
+                alert("로그인되었습니다." +id+"님 환영합니다")
+          } else{
+                alert("아이디가 일치하지 않습니다.")
+          }
+          </script>
+  <h1><a href="web.html">WEB</a></h1>
+<div id="grid">
+<ul>
+  <li><a href="index.html">HTML</a></li>
+  <li><a href="CSS.html">CSS</a></li>
+  <li><a href="javascript.html" id="active">JavaScript</a></li>
+</ul>
+    <div id="article">
+    <h2>javascript</h2>
+      <p>
+        JavaScript는 동적으로 콘텐츠를 바꾸고, 멀티미디어를 제어하고, 애니메이션을 추가하는등<br>
+         거의 모든 것을 만들 수 있는 스크립팅 언어입니다.<br>
+        (정말 모든게 가능하지는 않겠지만, JavaScript 코드 몇 줄만으로도 놀라운 결과를 이룰 수 있습니다)
+        <img src="webcake.png" height="500px" width="500px" alt="웹구성" title="웹 요소">   
+      </p>
+    </div>
+  </div>
+  </body>
+</html>
